@@ -162,6 +162,7 @@ header p{
     display: flex;
     justify-content: center;
     padding: 30px;
+    min-height: 400px;
 }
 
 .section3 .container{
@@ -188,6 +189,8 @@ header p{
 .section4{
     display: flex;
     justify-content: center;
+    height: 400px;
+    align-items: center;
 }
 
 .section4 .container{
@@ -197,7 +200,9 @@ header p{
     align-items: center;
     margin: 70px auto;
     border-radius: 10px;
-
+    box-sizing: border-box;
+    height: fit-content;
+    padding: 20px 5%;
 }
 
 
@@ -209,13 +214,13 @@ header p{
 .section4 .container .left{
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 10%;
+    
 }
 
 .section4 .container .right{
     justify-content: flex-end;
-    padding-right: 10%;
     
+
 }
 
 .section4 .container h2{
