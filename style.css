@@ -1,0 +1,249 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*HEADER*/
+
+ul{
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    
+}
+
+header{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+header li, a, a:hover, a:visited, a:focus, a:active{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+header p{
+    margin: 0;
+    font-weight: bolder;
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+/*SECTION 1*/
+
+.section1{
+    background-color: #1f2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.section1 .left h2{
+    font-weight: bolder;
+    font-size: 48px;
+    color: #f9faf8;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.section1 .left p{
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.section1 .left button{
+    padding: 10px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-family: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.section1 .left, .right{
+    width: 600px;
+}
+
+.section1 img{
+    width: 500px;
+    height: auto;
+}
+
+/*SECTION 2*/
+
+.section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.section2 h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
+}
+
+.deck{
+    display: flex;
+    align-items: flex-start;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    margin: 20px;
+}
+
+.undertext p{
+    margin-top: 0;
+    font-size:xx-large;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #3882f6;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.coffee{
+    background-image: url(images/cofee-nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tea{
+    background-image: url(images/tea-aniketh-kanukurthi-Qaor6nxikUM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.smoothie{
+    background-image: url(images/smoothie-lyfefuel-sq5NM8l_bI0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cake{
+    background-image: url(images/cake-kim-daniels-OrkEasJeY74-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*SECTION 3*/
+
+.section3{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.section3 .container{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote{
+    font-size: 36px;
+    font-weight:lighter;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.author{
+    align-self: flex-end;
+    margin-right: 20px;
+
+}
+
+/*SECTION 4*/
+
+.section4{
+    display: flex;
+    justify-content: center;
+}
+
+.section4 .container{
+    display: flex;
+    background-color: #3882f6;
+    width: 80%;
+    align-items: center;
+    margin: 70px auto;
+    border-radius: 10px;
+
+}
+
+
+.section4 .container .left, .right{
+    display: flex;
+    width: 50%;
+}
+
+.section4 .container .left{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10%;
+}
+
+.section4 .container .right{
+    justify-content: flex-end;
+    padding-right: 10%;
+    
+}
+
+.section4 .container h2{
+    margin-bottom: 0;
+    color: #f9faf8;
+}
+
+.section4 .container p{
+    margin-top: 3px;
+    color: #f9faf8
+}
+
+.section4 button{
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-family: inherit;
+    font-weight: bold;
+    border: 1px solid #f9faf8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
