@@ -9,7 +9,6 @@ ul{   /*some basic setup for the ul in the header*/
     padding-left: 0; 
     display: flex;
     gap: 10px;
-    
 }
 
 header{  /* the header includes the logo (left) and the ul (right)*/
@@ -174,7 +173,6 @@ header p{
     display: flex;
     flex-direction: column;
     justify-content: center; /*makes the text allways apeard centered*/
-    
 }
 
 .section3  p{
@@ -191,7 +189,6 @@ header p{
 .section3 .author{ /*i had to give this a little more specificity so it dosn´t loose agains the .section3 p*/
     align-self: flex-end; /*the autor will apear at the right independent of the rest of the div items display*/
     margin-right: 20px; /*a little margin so the autor dosnt apear at the maximum right*/
-
 }
 
 /*SECTION 4*/
@@ -224,7 +221,6 @@ header p{
 .section4 .container .left{
     flex-direction: column;
     justify-content: flex-start; /*this makes the text align always at the left*/
-    
 }
 
 .section4 .container .right{
