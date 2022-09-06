@@ -78,7 +78,7 @@ header p{
 }
 
 .section1 img{
-    width: 500px; /*the image width matches the right div width*/
+    max-width: 500px; /*the image width matches the right div width*/
     height: auto;
 }
 
@@ -255,4 +255,9 @@ footer{
     display: flex;
     justify-content: center;
     padding: 20px;
+    text-align: center;
+}
+
+.underline{
+    text-decoration: underline;
 }
