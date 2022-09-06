@@ -55,6 +55,7 @@ header p{
 
 
 
+
 .section1 .left h2{
     font-weight: bolder;
     font-size: 48px;
@@ -78,8 +79,9 @@ header p{
 }
 
 .section1 img{
-    max-width: 500px; /*the image width matches the right div width*/
+    width: 100%; /*the image width matches the right div width*/
     height: auto;
+    min-width: 370px; /*min width to prevent the image from overshrink*/
 }
 
 /*SECTION 2*/
