@@ -1,37 +1,36 @@
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Roboto', sans-serif; 
 }
 
 /*HEADER*/
 
-ul{
-    padding-left: 0;
+ul{   /*some basic setup for the ul in the header*/
+    padding-left: 0; 
     display: flex;
     gap: 10px;
     
 }
 
-header{
-    background-color: #1f2937;
-    color: #e5e7eb;
+header{  /* the header includes the logo (left) and the ul (right)*/
+    background-color: #1f2937;  
+    color: #e5e7eb;  
     font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 25px;
+    padding-right: 25px;  /*i gave padding to the header and then remove the margin from the objects inside of it*/
     padding-left: 25px;
 }
 
-header li, a, a:hover, a:visited, a:focus, a:active{
+header li, a, a:hover, a:visited, a:focus, a:active{  /*remove the default style from the ul and the links (i leave the links style removed in general in case i add more links to the page)*/
     list-style-type: none;
     text-decoration: none;
-    color: white;
+    color: #e5e7eb;
 }
 
 header p{
-    margin: 0;
+    margin: 0;  /*maargin remove due to header padding being enough separation from the borders*/
     font-weight: bolder;
     color: #f9faf8;
     font-size: 24px;
@@ -39,18 +38,18 @@ header p{
 
 /*SECTION 1*/
 
-.section1{
+.section1{  
     background-color: #1f2937;
-    color: white;
-    display: flex;
-    justify-content: center;
+    color: #e5e7eb;
+    display: flex;  
+    justify-content: center;  
     padding: 50px;
     gap: 80px;
     align-items: flex-start;
 }
 
 
-.section1 .left, .right{
+.section1 .left, .right{ /*default size for the divs inside the section*/
     width: 500px;
     box-sizing: border-box;
 }
@@ -60,39 +59,38 @@ header p{
 .section1 .left h2{
     font-weight: bolder;
     font-size: 48px;
-    color: #f9faf8;
-    margin-bottom: 0;
+    margin-bottom: 0; /*margin removed (the only margin in this section is the default p margin)*/
     margin-top: 0;
 }
 
 .section1 .left p{
-    color: #e5e7eb;
     font-size: 18px;
 }
 
 .section1 .left button{
-    padding: 10px;
+    padding: 10px;  /*separation between borders and text*/
     background-color: #3882f6;
     color: #f9faf8;
-    font-family: inherit;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
+    font-family: inherit;  
+    font-weight: bold;  
+    border: none; /*eliminate default button border*/
+    border-radius: 10px;  /*smooth corners*/
     font-size: 18px;
 }
 
 .section1 img{
-    width: 500px;
+    width: 500px; /*the image width matches the right div width*/
     height: auto;
 }
 
 /*SECTION 2*/
 
-.section2{
+.section2{ 
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 30px; /*padding between the section and the div inside of it (deck)*/
 }
 
 .section2 h2{
@@ -103,23 +101,24 @@ header p{
     color: #1f2937;
 }
 
-.deck{
+.deck{ /*this is the div that contains the cards*/
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    align-items: flex-start; /*cards align to the top of the div*/
+    justify-content: center; /*cards are always centered*/ 
+    flex-wrap: wrap;  /*allow the  cards to reorganize in a diferent line when the space is to small to fit*/
 }
 
-.card{
+.card{ /*the card contains both the image an the undertext*/
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 200px;
+    flex-direction: column; /*this makes the image container(wich contains the image) align itself on top of the text*/
+    justify-content: center; /*image align at the center*/
+    text-align: center; /*text align at the center*/
+    width: 200px; 
     margin: 20px;
 }
 
 .undertext p{
-    margin-top: 0;
+    margin: 5px; /*margin between the paragraph and its div (.undertet) border*/
     font-size:xx-large;
 }
 
@@ -128,15 +127,15 @@ header p{
     height: 200px;
     border: 2px solid #3882f6;
     box-sizing: border-box;
-    margin-bottom: 5px;
-    border-radius: 10px;
+    margin-bottom: 5px; /*a small margin to separate the text a little more*/
+    border-radius: 10px; /*corners smooth*/
 }
 
 .coffee{
-    background-image: url(images/cofee-nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(images/cofee-nathan-dumlao-XOhI_kW_TaM-unsplash.jpg); /*background image direction*/
+    background-size: cover; /*image cover all of its container*/
+    background-repeat: no-repeat; /*image wont repeat itself in case that the width or hight its not enough to cover all the container. insted it will make itself bogger to cover all at tle cost of cut a part outside */
+    background-position: center; /*image center will align with the center of the container*/
 }
 
 .tea{
@@ -167,14 +166,20 @@ header p{
     display: flex;
     justify-content: center;
     padding: 30px;
-    min-height: 400px;
+    min-height: 400px; /*a minimum height so it dosn´t appear too thin in comparison to other sections*/
 }
 
 .section3 .container{
     width: 60%;
     display: flex;
     flex-direction: column;
+    justify-content: center; /*makes the text allways apeard centered*/
+    
 }
+
+.section3  p{
+    margin: 0px; /*remove margin form the p in this section due to not being necesarry thanks to the padding of the div itself*/
+} 
 
 .quote{
     font-size: 36px;
@@ -183,9 +188,9 @@ header p{
     margin-bottom: 5px;
 }
 
-.author{
-    align-self: flex-end;
-    margin-right: 20px;
+.section3 .author{ /*i had to give this a little more specificity so it dosn´t loose agains the .section3 p*/
+    align-self: flex-end; /*the autor will apear at the right independent of the rest of the div items display*/
+    margin-right: 20px; /*a little margin so the autor dosnt apear at the maximum right*/
 
 }
 
@@ -198,11 +203,11 @@ header p{
     align-items: center;
 }
 
-.section4 .container{
+.section4 .container{ /*inside this container are two divs (left and right)*/
     display: flex;
     background-color: #3882f6;
     width: 80%;
-    align-items: center;
+    align-items: center; 
     margin: 70px auto;
     border-radius: 10px;
     box-sizing: border-box;
@@ -218,14 +223,12 @@ header p{
 
 .section4 .container .left{
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; /*this makes the text align always at the left*/
     
 }
 
 .section4 .container .right{
-    justify-content: flex-end;
-    
-
+    justify-content: flex-end; /*the button always apear at the left*/
 }
 
 .section4 .container h2{
